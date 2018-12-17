@@ -1,14 +1,16 @@
 $(document).ready(function () {
-  $("#formButton").click(function () {
-    $("#npQuiz").show();
-
+ 
 
 
     var winner = 0;
-    var count = 5;
+   
+////---------------------------
 
-
-
+   
+    $("#formButton").click(function () {
+      $("#npQuiz").show();
+  
+      var count = 5;
     var counter = setInterval(timer, 1000);
 
 
@@ -48,7 +50,11 @@ $(document).ready(function () {
       alert(winner);
     });
 
-
+    $("#formButtonTwo").click(function () {
+      $("#npQuiz").hide();
+      $("#formButton").hide();
+      $("#result").html('Guess This Number: ' + winner)
+    });
+  
   });
-
 });
