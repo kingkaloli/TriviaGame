@@ -3,6 +3,7 @@ $(document).ready(function () {
 
 
   var winner = 0;
+  var losses = 0;
 
   ////---------------------------
 
@@ -13,7 +14,7 @@ $(document).ready(function () {
     $("#formButton").show();
     
 
-
+    
     var count = 45;
     var counter = setInterval(timer, 1000);
 
@@ -29,29 +30,27 @@ $(document).ready(function () {
         $("#formButton").hide();
         $("#formButtonTwo").hide();
         $("#result").html('Correct Answers: ' + winner)
+        $("#losses").html('Wrong Answers: ' + losses)
        
       }
 
       //Do code for showing the number of seconds here
     }
 
-    $("#GreatSmoky").one("click", function () {
+      $('#GreatSmoky,#LakeMead,#wrangell,#YellowstoneFour').one("click", function () {
       winner++;
       console.log(winner);
+     
     });
-
-    $("#LakeMead").one("click", function () {
-      winner++;
-      console.log(winner);
+    
+    $('#canonlands,#Yellowstone1,#Yosemite1,#Yosemite2,#Denali1,#GrandTeton2,#deathValley,#yellowstone3,#GrandTeton3,#MountRainier,#CraterLake,#MesaVerdeFour')
+    .one("click", function () {
+      losses++;
+      console.log(losses);
+     
     });
-    $("#wrangell").on("click", function () {
-      winner++;
-      console.log(winner);
-    });
-    $("#YellowstoneFour").on("click", function () {
-      winner++;
-      console.log(winner);
-    });
+  
+    
   
 
     $("#formButtonTwo").click(function () {
@@ -59,6 +58,7 @@ $(document).ready(function () {
       $("#formButton").hide();
       $("#formButtonTwo").hide();
       $("#result").html('Correct Answers: ' + winner)
+      $("#losses").html('Wrong Answers: ' + losses)
       $("#countDown").hide();
 
     });
