@@ -2,17 +2,17 @@ $(document).ready(function () {
  
 
 
-       var winner = 0;
+      var winner = 0;
    
 ////---------------------------
- 
+
    
       $("#formButton").one("click", function () {
       $("#npQuiz").show();
       $("#formButtonTwo").show();
       
   
-      var count = 5;
+      var count = 45;
       var counter = setInterval(timer, 1000);
 
 
@@ -26,14 +26,9 @@ $(document).ready(function () {
         $("#npQuiz").hide();
         $("#formButton").hide();
         $("#formButtonTwo").hide();
+        $("#result").html('Guess This Number: ' + winner)
       }
-      if (count === 0) {
-      $("#startAgain").show();
-      $("#startAgain").on("click", function () {
-       
-      });
-
-      }
+    
       //Do code for showing the number of seconds here
     }
 
@@ -62,7 +57,7 @@ $(document).ready(function () {
       $("#npQuiz").hide();
       $("#formButton").hide();
       $("#formButtonTwo").hide();
-      $("#result").html('Guess This Number: ' + winner)
+      $("#result").html('Correct Answers ' + winner )
       $("#countDown").hide();
       
     });
