@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
@@ -22,84 +22,109 @@
   <div class="jumbotron">
     <h1 class="text-center">National Park Triva Game </h1>
   </div>
-<button type="button" id="formButton">Start Quiz</button>
-
-  
-
-  <form id="npQuiz" name="npQuiz">
-    <div id="countDown">
+  <!--start-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <button type="button" id="formButton" class="btn btn-secondary btn-lg btn-block">Start the Quiz</button>
+      </div>
+    </div>
   </div>
-    <!--Question1-->
-    <p> What is the most visited national park in the USA?</p>
-    <div>
-      <input type="radio" name="questionOne" value="canonlands" id="canonlands">
-      <label for="canonlands">Canyonlands</label>
-      <input type="radio" name="questionOne" value="GreatSmoky" id="GreatSmoky">
-      <label for="canonlands">Great Smoky</label>
-      <input type="radio" name="questionOne" value="Yellowstone" id="Yellowstone">
-      <label for="canonlands">Yellowstone</label>
-      <input type="radio" name="questionOne" value="Yosemite" id="Yosemite">
-      <label for="canonlands">Yosemite</label>
+  <br>
+  <br>
+  <!--count-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <div id="countDown">
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
     </div>
-    <div id="log"></div>
-    <br>
-    <!--Question2-->
-    <p> What is the most deadly National Park in the USA</p>
-    <div>
-      <input type="radio" name="questionTwo" value="Yosemite" id="Yosemite">
-      <label for="canonlands">Yosemite</label>
-      <input type="radio" name="questionTwo" value="Denali" id="Denali">
-      <label for="canonlands">Denali</label>
-      <input type="radio" name="questionTwo" value="LakeMead" id="LakeMead">
-      <label for="canonlands">Lake Mead</label>
-      <input type="radio" name="questionTwo" value="GrandTeton" id="GrandTeton">
-      <label for="canonlands">Grand Teton</label>
-    </div>
-    <div id="log"></div>
-    <br>
-    <!--Question3-->
-    <p> What is the largest national park in the USA?</p>
-    <div>
-      <input type="radio" name="questionThree" value="deathValley" id="deathValley">
-      <label for="canonlands">Death Valley</label>
-      <input type="radio" name="questionThree" value="wrangell" id="wrangell">
-      <label for="canonlands">Wrangell-St. Elias</label>
-      <input type="radio" name="questionThree" value="yellowstone" id="yellowstone">
-      <label for="canonlands">Yellowstone</label>
-      <input type="radio" name="questionThree" value="GrandTeton" id="GrandTeton">
-      <label for="canonlands">Grand Teton</label>
-    </div>
-    <br>
-    <!--Question4-->
-    <p> What is the oldest national park in the USA</p>
-    <div>
-      <input type="radio" name="questionOneFour" value="MountRainier" id="MountRainier">
-      <label for="canonlands"> Mount Rainier</label>
-      <input type="radio" name="questionOneFour" value="CraterLake" id="CraterLake">
-      <label for="canonlands">Crater Lake</label>
-      <input type="radio" name="questionOneFour" value="YellowstoneFour" id="YellowstoneFour">
-      <label for="canonlands">Yellowstone</label>
-      <input type="radio" name="questionOneFour" value="MesaVerdeFour" id="MesaVerdeFour">
-      <label for="canonlands">Mesa Verde</label>
-    </div>
-    <div id="log"></div>
-    <br>
+  </div>
+  <!---StatAgain-->
+ <button type="button" id="startAgain" class="btn btn-outline-secondary">Secondary</button>
+  <!--form-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form id="npQuiz" name="npQuiz">
 
-   
+          <!--Question1-->
+          <p> What is the most visited national park in the USA?</p>
+          <div>
+            <input type="radio" name="questionOne" value="canonlands" id="canonlands">
+            <label for="canonlands">Canyonlands</label>
+            <input type="radio" name="questionOne" value="GreatSmoky" id="GreatSmoky">
+            <label for="canonlands">Great Smoky</label>
+            <input type="radio" name="questionOne" value="Yellowstone" id="Yellowstone">
+            <label for="canonlands">Yellowstone</label>
+            <input type="radio" name="questionOne" value="Yosemite" id="Yosemite">
+            <label for="canonlands">Yosemite</label>
+          </div>
+          <div id="log"></div>
+          <br>
+          <!--Question2-->
+          <p> What is the most deadly National Park in the USA</p>
+          <div>
+            <input type="radio" name="questionTwo" value="Yosemite" id="Yosemite">
+            <label for="canonlands">Yosemite</label>
+            <input type="radio" name="questionTwo" value="Denali" id="Denali">
+            <label for="canonlands">Denali</label>
+            <input type="radio" name="questionTwo" value="LakeMead" id="LakeMead">
+            <label for="canonlands">Lake Mead</label>
+            <input type="radio" name="questionTwo" value="GrandTeton" id="GrandTeton">
+            <label for="canonlands">Grand Teton</label>
+          </div>
+          <div id="log"></div>
+          <br>
+          <!--Question3-->
+          <p> What is the largest national park in the USA?</p>
+          <div>
+            <input type="radio" name="questionThree" value="deathValley" id="deathValley">
+            <label for="canonlands">Death Valley</label>
+            <input type="radio" name="questionThree" value="wrangell" id="wrangell">
+            <label for="canonlands">Wrangell-St. Elias</label>
+            <input type="radio" name="questionThree" value="yellowstone" id="yellowstone">
+            <label for="canonlands">Yellowstone</label>
+            <input type="radio" name="questionThree" value="GrandTeton" id="GrandTeton">
+            <label for="canonlands">Grand Teton</label>
+          </div>
+          <br>
+          <!--Question4-->
+          <p> What is the oldest national park in the USA</p>
+          <div>
+            <input type="radio" name="questionOneFour" value="MountRainier" id="MountRainier">
+            <label for="canonlands"> Mount Rainier</label>
+            <input type="radio" name="questionOneFour" value="CraterLake" id="CraterLake">
+            <label for="canonlands">Crater Lake</label>
+            <input type="radio" name="questionOneFour" value="YellowstoneFour" id="YellowstoneFour">
+            <label for="canonlands">Yellowstone</label>
+            <input type="radio" name="questionOneFour" value="MesaVerdeFour" id="MesaVerdeFour">
+            <label for="canonlands">Mesa Verde</label>
+          </div>
+          <div id="log"></div>
+          <br>
 
-    <input id="button" type="button" value="I'm finished!" onclick="check();">
 
-  <button type="button" id="formButtonTwo"> See How I Did</button>
+
+
+
+      </div>
+    </div>
+  </div>
   </form>
+  <button type="button" id="formButtonTwo" class="btn btn-secondary btn-lg btn-block">See How I Did</button>
   <div id="result">
-  
-   </div>
+
+  </div>
 
 
 
-  <nav class="navbar fixed-bottom navbar-light bg-light">
-    <div id="bird"> <img src="assets/images/bird.png" alt="..." class="img-thumbnail"> </div>
-  </nav>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/javascript/app.js"></script>

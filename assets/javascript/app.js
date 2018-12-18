@@ -2,30 +2,38 @@ $(document).ready(function () {
  
 
 
-    var winner = 0;
+       var winner = 0;
    
 ////---------------------------
-
+ 
    
-    $("#formButton").click(function () {
+      $("#formButton").one("click", function () {
       $("#npQuiz").show();
+      $("#formButtonTwo").show();
+      
   
       var count = 5;
-    var counter = setInterval(timer, 1000);
+      var counter = setInterval(timer, 1000);
 
 
     function timer() {
 
       count = count - 1;
       $("#countDown").html('Time left: ' + count)
-      if (count === 0)
-
-      {
+      if (count === 0) {
         clearInterval(counter);
         $("#countDown").html('Time has run out ')
+        $("#npQuiz").hide();
+        $("#formButton").hide();
+        $("#formButtonTwo").hide();
       }
+      if (count === 0) {
+      $("#startAgain").show();
+      $("#startAgain").on("click", function () {
+       
+      });
 
-
+      }
       //Do code for showing the number of seconds here
     }
 
@@ -53,7 +61,10 @@ $(document).ready(function () {
     $("#formButtonTwo").click(function () {
       $("#npQuiz").hide();
       $("#formButton").hide();
+      $("#formButtonTwo").hide();
       $("#result").html('Guess This Number: ' + winner)
+      $("#countDown").hide();
+      
     });
   
   });

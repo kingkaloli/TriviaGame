@@ -5,9 +5,22 @@
     
     }
 
-    #formButton  {
+    #formButtonTwo {
 
-     
+        display:none;
 
        
+    }
+
+    #countDown {
+        font-size: 200%;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+
+    }
+
+    #startAgain  {
+
+        display:none;
+
     }
