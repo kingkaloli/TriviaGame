@@ -1,7 +1,14 @@
+.jumbotron  {
+
+    background-color: lightslategray;
+}
+
+
 #npQuiz {
 
     display:none;
-    background-color: bisque;
+    background-color: lightslategray;
+    padding: 30px;
     
     }
 
@@ -14,6 +21,7 @@
 
     #countDown {
         font-size: 200%;
+        color: brown;
         text-align: center;
         font-family: 'Staatliches', cursive;
 
