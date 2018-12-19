@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 
   var winner = 0;
-  var losses = 0;
+
 
 
   ////---------------------------
@@ -30,8 +30,9 @@ $(document).ready(function () {
         $("#npQuiz").hide();
         $("#formButton").hide();
         $("#formButtonTwo").hide();
-        $("#result").html('Correct Answers: ' + winner)
-        
+        $("#result").html(winner + ' /6 Correct Answers')
+        $("#playAgain").show();
+
 
       }
 
@@ -50,8 +51,13 @@ $(document).ready(function () {
       $("#formButtonTwo").hide();
       $("#result").html(winner + ' /6 Correct Answers')
       $("#countDown").hide();
+      $("#playAgain").show();
 
     });
 
   });
+  $('#playAgain').click(function () {
+    location.reload();
+  });
+
 });

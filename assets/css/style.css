@@ -1,4 +1,17 @@
-.jumbotron  {
+body {
+    background-image: url("tree_bark.png");
+    height: 100%;
+
+
+
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+
+}
+
+.jumbotron {
 
     background-color: lightslategray;
 }
@@ -6,44 +19,47 @@
 
 #npQuiz {
 
-    display:none;
+    display: none;
     background-color: lightslategray;
     padding: 30px;
-    
-    }
 
-    #formButtonTwo {
+}
 
-        display:none;
+#formButtonTwo {
 
-       
-    }
+    display: none;
 
-    #countDown {
-        font-size: 200%;
-        color: brown;
-        text-align: center;
-        font-family: 'Staatliches', cursive;
 
-    }
+}
 
-    #startAgain  {
+#countDown {
+    font-size: 200%;
+    color: brown;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
 
-        display:none;
+}
 
-    }
+#startAgain {
 
-    #result {
-        font-size: 200%;
-        text-align: center;
-        font-family: 'Staatliches', cursive;
+    display: none;
 
-    }
+}
 
-    #losses  {
+#result {
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
 
-        font-size: 200%;
-        text-align: center;
-        font-family: 'Staatliches', cursive;
+}
 
-    }
+#playAgain {
+    display: none;
+
+    width: 100px;
+    margin: -20px -50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+}
