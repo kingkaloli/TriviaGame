@@ -30,7 +30,7 @@ $(document).ready(function () {
         $("#npQuiz").hide();
         $("#formButton").hide();
         $("#formButtonTwo").hide();
-        $("#result").html(winner + ' /6 Correct Answers')
+        $("#result").html(winner + ' /5 Correct Answers')
         $("#playAgain").show();
 
 
@@ -49,7 +49,7 @@ $(document).ready(function () {
       $("#npQuiz").hide();
       $("#formButton").hide();
       $("#formButtonTwo").hide();
-      $("#result").html(winner + ' /6 Correct Answers')
+      $("#result").html(winner + ' /5 Correct Answers')
       $("#countDown").hide();
       $("#playAgain").show();
 
